@@ -2,7 +2,7 @@
 import './index.css'
 import Navbar from './Components/Navbar'
 import  Hero  from './Components/Hero'
-import Test from "./Components/Test"
+import OurParterns from './Components/Partners'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
      
 
       <Hero/>
-      {/* <Test/> */}
+      <OurParterns/>
       
     </>
   )
