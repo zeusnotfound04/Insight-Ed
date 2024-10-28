@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
+import Button from "./Button";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -12,11 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,16 +34,16 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flex justify-between items-center bg-white h-20 p-6  md:p-12 w-[89%] m-auto fixed left-1/2 translate-x-[-50%] drop-shadow-xl z-20 ${
+        className={` flex justify-between items-center bg-white transition-all duration-300 ${
           scrolling
-            ? "fixed top-5 bg-white/30 backdrop-blur-md border w-5  rounded-full "
-            : "top-0 w-full rounded-none md:p-6 "
-        }`}
+            ? "h-16 md:h-18 p-4 md:p-8 fixed top-5 bg-white/30 backdrop-blur-md border font-medium rounded-full w-[60%]" // Adjusted width for scrolling state
+            : "h-20 p-6 md:p-12 top-0 w-full" // Normal width
+        } m-auto fixed left-1/2 translate-x-[-50%] drop-shadow-xl z-20`}
       >
         <div className="flex items-center">
           <div className="w-5 p1"></div>
           <img className="w-8" src="src/logo/logo 1200x1200.png" alt="" />
-          <h1 className="lg:text-2xl md:text-base  font-bold uppercase text-black">Insight Ed</h1>
+          <h1 className={` md:text-base  uppercase text-black ${scrolling ? "font-medium lg:text-xl" : " lg:text-2xl font-bold"}`}>Insight Ed</h1>
         </div>
 
         {/* Nav Links */}
@@ -63,7 +60,7 @@ const Navbar = () => {
             <a
               key={index}
               href={link.href}
-              className="block md:inline-block py-4 px-6 text-base  font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-200 ease-in-out md:py-0"
+              className="block md:inline-block py-4 px-6 text-base font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-200 ease-in-out md:py-0"
             >
               <li>{link.title}</li>
             </a>
@@ -73,7 +70,7 @@ const Navbar = () => {
           <li className="block md:hidden mt-4">
             <a
               href="#"
-              className="block  rounded-lg px-6 py-3 text-base font-semibold text-white bg-black hover:bg-gray-50 hover:text-black"
+              className="block rounded-lg px-6 py-3 text-base font-semibold text-white bg-black hover:bg-gray-50 hover:text-black"
             >
               Get a Demo
             </a>
@@ -82,12 +79,7 @@ const Navbar = () => {
 
         {/* Get Demo Button on larger screens */}
         <div className="hidden md:block py-6">
-          <a
-            href="#"
-            className="-mx-3 block  rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-black hover:bg-gray-50 hover:text-black"
-          >
-            Get a Demo
-          </a>
+          <Button />
         </div>
 
         {/* MOBILE MENU ICONS */}

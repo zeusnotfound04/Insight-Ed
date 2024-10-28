@@ -9,6 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily :{
+
+        fira : ["Fira Sans", " sans-serif"] ,
         barlow : ["Barlow Semi Condensed", "sans-serif"],
         NueueMontreal: ["NueueMontreal", "sans-serif"],
         Viga : ["Viga" ,"sans-serif"],

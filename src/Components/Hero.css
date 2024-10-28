@@ -1,0 +1,6 @@
+.tagline-gradient {
+    background: linear-gradient(2005deg, rgb(255, 255, 247) 8.55094%, rgb(114, 114, 103) 107.012%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

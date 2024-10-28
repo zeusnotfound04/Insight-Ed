@@ -44,7 +44,7 @@
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg , transparent, #111);
+    background: linear-gradient(270deg , transparent, #5c3d66);
 }
 
 .neonBtn:hover .btnSpan:nth-child(3){
