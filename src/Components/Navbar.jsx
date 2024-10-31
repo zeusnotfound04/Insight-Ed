@@ -36,8 +36,8 @@ const Navbar = () => {
       <nav
         className={` flex justify-between items-center bg-white transition-all duration-300 ${
           scrolling
-            ? "h-16 md:h-18 p-4 md:p-8 fixed top-5 bg-white/30 backdrop-blur-md border font-medium rounded-full w-[60%]" // Adjusted width for scrolling state
-            : "h-20 p-6 md:p-12 top-0 w-full" // Normal width
+            ? "h-16 md:h-18 p-4 md:p-8 fixed top-5 bg-white/30 backdrop-blur-md border font-medium rounded-full w-[60%]"
+            : "h-20 p-6 md:p-12 top-0 w-full"
         } m-auto fixed left-1/2 translate-x-[-50%] drop-shadow-xl z-20`}
       >
         <div className="flex items-center">
@@ -60,7 +60,7 @@ const Navbar = () => {
             <a
               key={index}
               href={link.href}
-              className="block md:inline-block py-4 px-6 text-base font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-200 ease-in-out md:py-0"
+              className={`block md:inline-block py-4 px-6  font-medium hover:bg-gray-100 hover:text-blue-500 transition-all duration-200 ease-in-out md:py-0 ${scrolling ? "text-small": "text-base" }`}
             >
               <li>{link.title}</li>
             </a>
@@ -79,7 +79,7 @@ const Navbar = () => {
 
         {/* Get Demo Button on larger screens */}
         <div className="hidden md:block py-6">
-          <Button />
+          <Button scrolling={scrolling} />
         </div>
 
         {/* MOBILE MENU ICONS */}

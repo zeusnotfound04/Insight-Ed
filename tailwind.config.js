@@ -8,6 +8,10 @@ export default {
   
   theme: {
     extend: {
+      fontSize: {
+        
+        'small' : "12px"
+      },
       fontFamily :{
 
         fira : ["Fira Sans", " sans-serif"] ,
