@@ -69,9 +69,9 @@ const ScrollAnimation = () => {
     <div ref={containerRef} className="relative flex min-h-screen items-center justify-center bg-white overflow-hidden">
       {/* Left-side text */}
       <div className="left-text fixed left-20 top-1/2 transform -translate-y-1/2 opacity-0 space-y-4 hidden md:block">
-        <h2 className="text-2xl font-bold">{stageTexts[currentStage].title}</h2>
-        <h3 className="text-xl font-semibold text-purple-500">{stageTexts[currentStage].subtitle}</h3>
-        <p className="text-lg">{stageTexts[currentStage].description}</p>
+        <h2 className="text-4xl font-bold">{stageTexts[currentStage].title}</h2>
+        <h3 className="text-2xl font-semibold text-purple-500">{stageTexts[currentStage].subtitle}</h3>
+        <p className="text-xl">{stageTexts[currentStage].description}</p>
       </div>
       
       {/* Orange timeline on the left side */}

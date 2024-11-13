@@ -6,3 +6,21 @@
 
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    .link-effect:after {
+      content: '';
+      display: block;
+      width: 100%;
+      border-bottom-width: 3px;
+      border-bottom-color: black;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    .group:hover .link-effect:after {
+      transform: scaleX(1);
+    }
+  }

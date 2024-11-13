@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import ParticlesContainer from './Particle';
-import "./Hero.css"
+import "../styles/Hero.css";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -35,7 +35,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div id="about-us" className="relative">
       {/* Hero Section */}
       <div ref={heroRef} className="min-h-screen w-full flex items-center justify-center bg-black relative rounded-lg overflow-hidden">
         {/* Particles in the background */}
