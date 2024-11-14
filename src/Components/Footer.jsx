@@ -34,24 +34,23 @@ function Footer() {
 
   return (
     <footer id="contact-us" className="bg-black mt-20 text-white w-full h-screen flex flex-col justify-between p-8 md:p-16">
-      {/* Top Section */}
+      
       <div className="flex w-full justify-between">
-        {/* Left - Contact Section */}
+      
         <div className="space-y-2 md:space-y-4 text-left">
           <p className="uppercase text-sm">(Let’s Connect)</p>
           <Link to="mailto:hello@agentic.com" className="text-xl md:text-2xl font-semibold hover:underline">
-            support@support.in
+            support@insight-ed.in
           </Link>
         </div>
 
         <div className="space-y-2 md:space-y-4 text-right">
           <p className="uppercase text-sm">(Follow Us)</p>
           <ul className="space-y-1">
-            <li><Link to="#" className="hover:underline">Twitter</Link></li>
-            <li><Link to="#" className="hover:underline">LinkedIn</Link></li>
-            <li><Link to="#" className="hover:underline">Medium</Link></li>
-            <li><Link to="#" className="hover:underline">Instagram</Link></li>
-            <li><Link to="#" className="hover:underline">Licensing</Link></li>
+            <li><Link to="https://www.linkedin.com/company/insightedin" className="hover:underline">LinkedIn</Link></li>
+            <li><Link to="https://substack.com/@insighted1" className="hover:underline">Sub Stack</Link></li>
+            <li><Link to="https://www.instagram.com/insighted.in/" className="hover:underline">Instagram</Link></li>
+            <li><Link to="https://www.youtube.com/@InsightED116" className="hover:underline">Youtube</Link></li>
           </ul>
         </div>
       </div>
@@ -68,7 +67,7 @@ function Footer() {
 
       <div className="flex w-full justify-between items-center border-t border-gray-700 pt-4">
         <p className="text-xs md:text-sm">© 2024 by Insight Ed</p>
-        <p className="text-xs md:text-sm">Made by Zeus</p>
+        <p className="text-xs md:text-sm">Powered by <Link to="https://www.risejhansi.in/">RISE Incubator</Link></p>
       </div>
     </footer>
   );
