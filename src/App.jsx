@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <Router>
         <Navbar/>     
         <Hero/>
         <OurParterns/>
@@ -22,7 +22,7 @@ function App() {
         <Pricing/>
         <FAQ/>
         <Footer/>
-      </HashRouter>
+      </Router>
     </>
   )
 }
