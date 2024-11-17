@@ -63,7 +63,7 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <ul
-          className={`md:flex navLink gap-5 font-medium text-black [&>li]:cursor-pointer absolute md:static top-20 max-md:p-3 text-center ${
+          className={`md:flex navLink gap-5 font-medium text-black [&>li]:cursor-pointer absolute md:rounded-full md:static top-20 max-md:p-3 text-center ${
             openMenu ? "bg-white w-full left-0" : "hidden"
           } ${
             scrolling && openMenu
@@ -76,7 +76,7 @@ const Navbar = () => {
               key={index}
               to={link.to}
               onClick={link.onClick}
-              className={`block md:inline-block py-4 px-6 font-medium hover:bg-gray-100 link-effect hover:text-blue-500 transition-all duration-200 ease-in-out md:py-0 ${
+              className={`block md:inline-block py-4 px-6 font-medium  hover:bg-gray-100 link-effect hover:text-blue-500 transition-all duration-200 ease-in-out md:py-0 ${
                 scrolling ? "text-small" : "text-base"
               }`}
             >
