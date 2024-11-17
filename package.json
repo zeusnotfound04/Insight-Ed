@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage" :  "https://zeusnotfound04.github.io/Insight-Ed",
-=======
-  "homepage": "https://zeusnotfound04.github.io/Insight-Ed",
->>>>>>> bb57527 (ready to deploy)
   "name": "insight-ed",
   "private": true,
   "version": "0.0.0",

@@ -66,7 +66,7 @@ const ScrollAnimation = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative flex min-h-screen items-center justify-center bg-white overflow-hidden">
+    <div ref={containerRef} className="relative flex min-h-screen items-center justify-center bg-white overflow-hidden" id="explore" >
       {/* Left-side text */}
       <div className="left-text fixed left-20 top-1/2 transform -translate-y-1/2 opacity-0 space-y-4 hidden md:block">
         <h2 className="text-4xl font-bold">{stageTexts[currentStage].title}</h2>
