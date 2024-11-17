@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar'
 import  Hero  from './Components/Hero'
 import OurParterns from './Components/Partners'
 import ScrollAnimation from "./Components/UIShowcase"
-
+import { HashRouter } from 'react-router-dom'
 import Footer from './Components/Footer'
 import FAQ from './Components/FAQ'
 import Pricing from './Components/Pricing'

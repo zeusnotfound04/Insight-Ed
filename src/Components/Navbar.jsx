@@ -3,6 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { NavBtn } from "./Buttons";
+import Logo from "../logo/logo 1200x1200.png";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
         } m-auto fixed left-1/2 translate-x-[-50%] drop-shadow-xl z-20`}
       >
         <div className="flex items-center">
-          <img className="w-8" src="src/logo/logo 1200x1200.png" alt="Logo" />
+          <img className="w-8" src={Logo} alt="Logo" />
           <h1
             className={`md:text-base uppercase text-black ${
               scrolling ? "font-medium lg:text-xl" : "lg:text-2xl font-bold"
