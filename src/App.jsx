@@ -3,7 +3,7 @@ import './index.css'
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import  Hero  from './Components/Hero'
-import OurParterns from './Components/Partners'
+import OurParterns from './Components/ui/Partners'
 import ScrollAnimation from "./Components/UIShowcase"
 import { HashRouter } from 'react-router-dom'
 import Footer from './Components/Footer'

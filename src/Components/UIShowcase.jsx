@@ -16,17 +16,17 @@ const ScrollAnimation = () => {
     {
       title: "Unite your customer journey",
       subtitle: "Success",
-      description: "Drive successful outcomes. Grow revenue.",
+      description: "Define access control for various administrative roles, create custom roles with the respective permissions & delegate responsibilities acc.",
     },
     {
-      title: "Unite your customer journey",
+      title: "Student Attendance Management System",
       subtitle: "Service",
-      description: "World-class service. Convert clients into promoters.",
+      description: "Efficiently track and manage student attendance with Teachmint’s advanced Attendance Management Software.Streamline processes, enhance accuracy, and ensure a seamless attendance management experience.",
     },
     {
-      title: "Unite your customer journey",
+      title: "Fee Management System Software",
       subtitle: "Sales",
-      description: "Streamline your sales process. Sell lasting deals.",
+      description: "Make fee management effective, efficient, and easy with Teachmint's Fee Management Software. Automate and simplify the entire process of fee management.",
     },
   ];
 

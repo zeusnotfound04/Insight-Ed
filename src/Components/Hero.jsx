@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import ParticlesContainer from './Particle';
+import ParticlesContainer from './ui/Particle';
 import "../styles/Hero.css";
 
 
