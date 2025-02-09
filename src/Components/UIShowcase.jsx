@@ -16,7 +16,7 @@ const ScrollAnimation = () => {
     {
       title: "Unite your customer journey",
       subtitle: "Success",
-      description: "Define access control for various administrative roles, create custom roles with the respective permissions & delegate responsibilities acc.",
+      description: "Define access control for various administrative roles, create custom roles with the respective permissions & delegate responsibilities accordingly.",
     },
     {
       title: "Student Attendance Management System",
@@ -68,10 +68,10 @@ const ScrollAnimation = () => {
   return (
     <div ref={containerRef} className="relative flex min-h-screen items-center justify-center bg-white overflow-hidden" id="explore" >
       {/* Left-side text */}
-      <div className="left-text fixed left-20 top-1/2 transform -translate-y-1/2 opacity-0 space-y-4 hidden md:block">
-        <h2 className="text-4xl font-bold">{stageTexts[currentStage].title}</h2>
+      <div className="left-text w-[30%] fixed left-20 top-1/2 transform -translate-y-1/2 opacity-0 space-y-4 hidden md:block">
+        <h2 className="text-4xl  font-bold">{stageTexts[currentStage].title}</h2>
         <h3 className="text-2xl font-semibold text-purple-500">{stageTexts[currentStage].subtitle}</h3>
-        <p className="text-xl">{stageTexts[currentStage].description}</p>
+        <p className="text-xl font-semibold">{stageTexts[currentStage].description}</p>
       </div>
       
       {/* Orange timeline on the left side */}
@@ -79,13 +79,13 @@ const ScrollAnimation = () => {
 
       {/* Carousel for mobile view */}
       <div className="block md:hidden w-full text-center space-y-4 p-4">
-        <div
-          className="w-full h-48 bg-cover bg-center rounded-lg shadow-lg mx-auto"
-          style={{
-            backgroundImage: `url(${images[carouselIndex]})`,
-            transition: "background-image 0.75s ease",
-          }}
-        ></div>
+      <div
+  className="w-full h-48 bg-center bg-no-repeat bg-contain rounded-lg shadow-lg mx-auto"
+  style={{
+    backgroundImage: `url(${images[carouselIndex]})`,
+    transition: "background-image 0.75s ease",
+  }}
+></div>
         <h2 className="text-xl font-bold">{stageTexts[carouselIndex].title}</h2>
         <button className="px-4 py-2 bg-orange-500 text-white rounded-lg">Book a demo</button>
         <div>
@@ -96,12 +96,12 @@ const ScrollAnimation = () => {
 
       {/* Dashboard image for desktop */}
       <div
-        className="dashboard-image w-3/5 h-3/4 bg-cover bg-center rounded-lg shadow-lg hidden md:block"
-        style={{
-          backgroundImage: `url(${images[currentStage]})`,
-          transition: "background-image 0.75s ease",
-        }}
-      ></div>
+  className="dashboard-image w-3/5 h-[500px] bg-center bg-no-repeat bg-contain rounded-lg shadow-lg hidden md:block"
+  style={{
+    backgroundImage: `url(${images[currentStage]})`,
+    transition: "background-image 0.75s ease",
+  }}
+></div>
     </div>
   );
 };
