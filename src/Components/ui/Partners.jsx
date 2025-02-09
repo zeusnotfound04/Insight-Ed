@@ -1,7 +1,7 @@
-import Partner1 from "../assets/Recommend/Partner1.png";    
-import Partner2 from "../assets/Recommend/Partner2.png";
-import Partner3 from "../assets/Recommend/Partner3.png";
-import Partner4 from "../assets/Recommend/Partner4.png";
+import Partner1 from "@/assets/Recommend/Partner1";    
+import Partner2 from "@/assets/Recommend/Partner2";
+import Partner3 from "@/assets/Recommend/Partner3";
+import Partner4 from "@/assets/Recommend/Partner4";
 
 function OurPartners() {
   return (
