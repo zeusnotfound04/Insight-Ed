@@ -102,7 +102,7 @@ const Navbar = () => {
           {/* Get Demo Button inside mobile menu */}
           <li className="block md:hidden mt-4">
             <Link
-              to="#"
+              to="https://github.com/zeusnotfound04/-Insight-Ed-SaaS"
               className="block rounded-lg px-4 py-2 text-sm sm:text-base font-semibold text-white bg-black hover:bg-gray-800 transition-colors duration-200"
             >
               Get a Demo

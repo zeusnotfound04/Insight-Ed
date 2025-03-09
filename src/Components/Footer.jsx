@@ -66,7 +66,7 @@ function Footer() {
       </div>
 
       <div className="flex w-full justify-between items-center border-t border-gray-700 pt-4">
-        <p className="text-xs md:text-sm">© 2024 by Insight Ed</p>
+        <p className="text-xs md:text-sm">© 2025 by Insight Ed</p>
         <p className="text-xs md:text-sm">Powered by <Link to="https://www.risejhansi.in/">RISE Incubator</Link></p>
       </div>
     </footer>

@@ -6,7 +6,7 @@ export function NavBtn({ scrolling }) {
   return (
     <div className="MainBtnDiv mr-5">
       <Link
-        to="#"
+        to="https://github.com/zeusnotfound04/-Insight-Ed-SaaS"
         className={`neonBtn font-NueueMontreal font-medium bg-slate-100 ${scrolling ? "text-small" : "text-sm"}`}
       >
         Get Demo

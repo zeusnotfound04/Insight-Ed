@@ -55,7 +55,10 @@ const PricingCards = () => {
               <button
                 className="price-card__button bg-white text-black text-lg font-medium py-3 px-8 rounded-full shadow-md mt-6"
               >
+                <a href="https://rlgupetl98o.typeform.com/to/eo91rDPZ">
+
                 {card.buttonText}
+                </a>
               </button>
             </div>
           </div>

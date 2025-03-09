@@ -21,12 +21,12 @@ const ScrollAnimation = () => {
     {
       title: "Student Attendance Management System",
       subtitle: "Service",
-      description: "Efficiently track and manage student attendance with Teachmint’s advanced Attendance Management Software.Streamline processes, enhance accuracy, and ensure a seamless attendance management experience.",
+      description: "Efficiently track and manage student attendance with Insight Ed's advanced Attendance Management Software.Streamline processes, enhance accuracy, and ensure a seamless attendance management experience.",
     },
     {
       title: "Fee Management System Software",
       subtitle: "Sales",
-      description: "Make fee management effective, efficient, and easy with Teachmint's Fee Management Software. Automate and simplify the entire process of fee management.",
+      description: "Make fee management effective, efficient, and easy with Insight Ed's Fee Management Software. Automate and simplify the entire process of fee management.",
     },
   ];
 
